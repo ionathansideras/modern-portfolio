@@ -42,9 +42,10 @@
 
         .experience-photo-1 {
             position: absolute;
-            top: 0;
-            right: 0;
-            width: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 28px;
+            height: 70%;
         }
         .experience-photo-2 {
             position: absolute;

@@ -1,5 +1,5 @@
 import SectionTitle from "./SectionTitle";
-import codeImg from "../assets/code.svg";
+import work from "../assets/work.svg";
 import freelance from "../assets/freelance.svg";
 
 export default function Experience() {
@@ -15,11 +15,7 @@ export default function Experience() {
                         <h3>FrontEnd Developer</h3>
                         <p>2 years working in Three Deers</p>
                     </div>
-                    <img
-                        src={codeImg}
-                        alt="code"
-                        className="experience-photo-1"
-                    />
+                    <img src={work} alt="code" className="experience-photo-1" />
                 </article>
                 <article className="experience">
                     <div>
