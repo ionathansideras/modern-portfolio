@@ -10,9 +10,16 @@ body {
     font-family: "Inter", sans-serif;
     cursor: url("/cursor.png") 4 12, auto;
 }
+
+// #root {
+//     max-width: 1900px;
+//     margin: auto;
+// }
+
 ::selection {
     background: rgba(208, 177, 255, 0.5); /* highlight background color */
 }
+
 button,
 a {
     cursor: url("/pointer.png") 2 2, pointer;
