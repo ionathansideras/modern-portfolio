@@ -1,13 +1,13 @@
 @import "./_variables.scss";
 
 .hero-container {
-    height: calc(100svh - 40px);
+    height: calc(100svh - 120px);
     width: calc(100% - 40px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 100px 20px 20px 20px;
 
     background-image: url("/grid.svg");
     background-size: contain;
@@ -63,7 +63,6 @@
     }
 
     .hero-title {
-        margin-top: 50px;
         text-align: center;
         font-size: $lg_text_small;
         text-transform: uppercase;
