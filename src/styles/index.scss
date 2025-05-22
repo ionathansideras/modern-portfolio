@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import "./_variables.scss";
+@import "./header.scss";
+@import "./hero.scss";
+@import "./button.scss";
+
+body {
+    margin: 0;
+    background-color: $main_background_color;
+    font-family: "Inter", sans-serif;
+    cursor: url("/cursor.png") 4 12, auto;
+}
+::selection {
+    background: rgba(208, 177, 255, 0.5); /* highlight background color */
+}
+button,
+a {
+    cursor: url("/pointer.png") 2 2, pointer;
+}
+
+.gradient {
+    position: absolute;
+    opacity: 0;
+    mix-blend-mode: screen; // smoother than color-dodge
+    pointer-events: none;
+    filter: blur(30px); // makes it glow softly
+}

@@ -1,0 +1,50 @@
+@import "./_variables.scss";
+
+.app-button-container {
+    .app-button {
+        position: relative;
+        display: inline-block;
+        background-color: $main_background_color;
+        color: white;
+        padding: 15px 40px;
+        font-size: $md_text_medium;
+        border-radius: $border_radius;
+        z-index: 1;
+        overflow: hidden;
+        border: none;
+        // cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            padding: 1.5px; // thickness of the border
+            border-radius: inherit;
+            background: linear-gradient(
+                270deg,
+                #7925ff,
+                rgb(203, 172, 249),
+                #7925ff
+            );
+            background-size: 400% 400%;
+            animation: animated-border 5s linear infinite;
+            z-index: -1;
+            mask: linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            mask-composite: exclude;
+            -webkit-mask-composite: destination-out;
+            box-sizing: border-box;
+        }
+    }
+
+    @keyframes animated-border {
+        0% {
+            background-position: 0% 50%;
+        }
+        100% {
+            background-position: 100% 50%;
+        }
+    }
+}
