@@ -1,13 +1,13 @@
 @import "./_variables.scss";
 
 .hero-container {
-    height: calc(100svh - 120px);
+    height: calc(100svh - 40px);
     width: calc(100% - 40px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 100px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
 
     background-image: url("/grid.svg");
     background-size: contain;
@@ -37,7 +37,7 @@
         justify-content: center;
         gap: 5px 10px;
         flex-wrap: wrap;
-        width: 80%;
+        width: 60%;
         margin: 20px 0;
 
         h1 {
