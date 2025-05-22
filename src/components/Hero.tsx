@@ -55,7 +55,7 @@ export default function Hero() {
                     <h1
                         key={index}
                         className={`stagger-box-hero ${
-                            index > 4 ? "hero-text-purple" : ""
+                            index > 5 ? "hero-text-purple" : ""
                         } `}
                     >
                         {item}
