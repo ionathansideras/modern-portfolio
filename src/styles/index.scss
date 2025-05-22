@@ -3,6 +3,7 @@
 @import "./header.scss";
 @import "./hero.scss";
 @import "./button.scss";
+@import "./experience.scss";
 
 body {
     margin: 0;
@@ -31,4 +32,28 @@ a {
     mix-blend-mode: screen; // smoother than color-dodge
     pointer-events: none;
     filter: blur(30px); // makes it glow softly
+}
+
+.section-title {
+    font-size: $lg_text_large;
+    color: $main_text_color;
+    text-align: center;
+    margin: 20px 0 0 0;
+    padding: 0;
+
+    span {
+        color: $secondary_text_color;
+    }
+
+    @media (max-width: $md) {
+        font-size: $md_text_large;
+    }
+
+    @media (max-width: $sm) {
+        font-size: $sm_text_large;
+    }
+
+    @media (max-width: $xs) {
+        font-size: $xs_text_large;
+    }
 }

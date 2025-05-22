@@ -1,0 +1,78 @@
+@import "./_variables.scss";
+
+.experience-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .experience {
+        position: relative;
+        background-color: $secondary_background_color;
+        border-radius: $border_radius;
+        height: 150px;
+        border: 1px solid $main_border_color;
+        width: 40%;
+        display: flex;
+        align-items: end;
+        background-image: url("/footer-grid.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left;
+        overflow: hidden;
+
+        div {
+            margin-left: 20px;
+            transition: all 0.3s ease-in-out;
+            z-index: 2;
+
+            h3 {
+                color: $main_text_color;
+                font-size: $lg_text_medium;
+                margin: 0;
+            }
+
+            p {
+                color: $dark_text_color;
+                font-size: $lg_text_small;
+            }
+        }
+
+        .experience-photo-1 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+        }
+        .experience-photo-2 {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 20px;
+            height: 80%;
+        }
+
+        &:hover {
+            div {
+                transform: translateX(10px);
+            }
+        }
+    }
+    @media (max-width: $md) {
+        .experience {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: $sm) {
+        flex-direction: column;
+        .experience {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: $xs) {
+    }
+}
