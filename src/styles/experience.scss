@@ -12,6 +12,18 @@
         transform: translateY(-50%);
         left: 0;
         width: 100%;
+
+        @media (max-width: $sm) {
+            top: 10%;
+            transform: rotate(90deg) translateY(50%);
+            width: 600px;
+            transform: rotate(90deg);
+        }
+        @media (max-width: $xs) {
+            top: 10%;
+            transform: rotate(90deg) translateY(50%);
+            width: 600px;
+        }
     }
 
     .experience {
