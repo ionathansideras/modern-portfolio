@@ -1,0 +1,51 @@
+@import "./_variables.scss";
+
+.about-container {
+    height: 90svh;
+    display: flex;
+    gap: 20px;
+    position: relative;
+
+    .about-text {
+        width: calc(50% - 40px);
+        height: fit-content;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        border-radius: $border-radius;
+        border: 1px solid $main_border_color;
+        position: relative;
+        background-color: $secondary_background_color;
+        z-index: 3;
+
+        .about-text-code {
+            margin-top: 20px;
+            font-size: $lg_text_medium;
+
+            span,
+            p,
+            div {
+                opacity: 0;
+            }
+            .about-text-list {
+                margin-left: 35px;
+
+                p {
+                    margin: 0 0 0 35px;
+                }
+            }
+        }
+    }
+
+    .about-skills {
+        padding: 20px;
+        width: calc(50% - 40px);
+    }
+
+    @media (max-width: $md) {
+        flex-direction: column;
+        .about-text {
+            width: calc(100% - 40px);
+        }
+    }
+}

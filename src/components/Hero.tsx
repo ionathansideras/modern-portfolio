@@ -2,7 +2,8 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { heroContent } from "../data";
 import Button from "./Button";
-import Gradient from "./Gradient";
+import Gradient from "./design/Gradient";
+import GridBackground from "./design/GridBackground";
 
 export default function Hero() {
     useGSAP(() => {
@@ -24,17 +25,37 @@ export default function Hero() {
             { y: 0, opacity: 1, duration: 1 }
         );
 
-        gsap.to(".gradient-hero1", {
-            opacity: 0.3,
-            duration: 0.5,
-            ease: "power2.out",
-        });
+        gsap.fromTo(
+            ".gradient-hero1",
+            {
+                opacity: 0,
+            },
+            {
+                opacity: 0.3,
+                duration: 0.5,
+                ease: "power2.out",
+            }
+        );
+
+        gsap.fromTo(
+            ".gradient-hero2",
+            {
+                opacity: 0,
+            },
+            {
+                opacity: 0.3,
+                duration: 1,
+                delay: 0.5,
+                ease: "power2.out",
+            }
+        );
 
         gsap.to(".gradient-hero2", {
-            opacity: 0.4,
-            duration: 1,
-            delay: 0.5,
-            ease: "power2.out",
+            top: -190,
+            duration: 6,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
         });
     }, []);
 
@@ -43,14 +64,22 @@ export default function Hero() {
 
     return (
         <main className="hero-container">
-            <Gradient
-                animateClass="gradient-hero1"
-                top={"0px"}
-                left={"20px"}
-                width="300px"
+            <GridBackground
+                type={1}
+                size="contain"
+                repeat="repeat"
+                zIndex={-3}
+                position="center"
             />
             <p className="hero-title">{heroContent.title}</p>
             <div>
+                <Gradient
+                    animationClass="gradient-hero1"
+                    top={"-200px"}
+                    left={"-50px"}
+                    width="300px"
+                    priority={true}
+                />
                 {mainArray.map((item, index) => (
                     <h1
                         key={index}
@@ -61,18 +90,18 @@ export default function Hero() {
                         {item}
                     </h1>
                 ))}
+                <Gradient
+                    animationClass="gradient-hero2"
+                    right={"-100px"}
+                    top="0px"
+                    width="500px"
+                    rotation="-90deg"
+                />
             </div>
             <p className="hero-description">{heroContent.description}</p>
             <Button href="#projects" animationClass="hero-button">
                 Check my Work
             </Button>
-            <Gradient
-                animateClass="gradient-hero2"
-                right={"20px"}
-                bottom="0px"
-                width="500px"
-                rotation="-90deg"
-            />
         </main>
     );
 }
