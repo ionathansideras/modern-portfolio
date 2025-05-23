@@ -1,7 +1,8 @@
 import SectionTitle from "./SectionTitle";
-import code from "../assets/code.svg";
-import freelance from "../assets/freelance.svg";
+import { experience } from "../data";
 import GridBackground from "./design/GridBackground";
+import balls from "../assets/balls.svg";
+import { MouseParallax } from "react-just-parallax";
 
 export default function Experience() {
     return (
@@ -11,39 +12,31 @@ export default function Experience() {
             </SectionTitle>
 
             <section className="experience-container">
-                <article className="experience">
-                    <GridBackground
-                        type={2}
-                        size="cover"
-                        repeat="no-repeat"
-                        zIndex={1}
-                        position="left"
-                    />
+                <MouseParallax strength={0.07} isAbsolutelyPositioned>
+                    <img src={balls} alt="balls" className="balls" />
+                </MouseParallax>
 
-                    <div>
-                        <h3>FrontEnd Developer</h3>
-                        <p>2 years working in Three Deers</p>
-                    </div>
-                    <img src={code} alt="code" className="experience-photo-1" />
-                </article>
-                <article className="experience">
-                    <GridBackground
-                        type={2}
-                        size="cover"
-                        repeat="no-repeat"
-                        zIndex={1}
-                        position="left"
-                    />
-                    <div>
-                        <h3>Freelance</h3>
-                        <p>I did a freelance project for a client</p>
-                    </div>
-                    <img
-                        src={freelance}
-                        alt="freelance"
-                        className="experience-photo-2"
-                    />
-                </article>
+                {experience.map((item, index) => (
+                    <article className="experience" key={index}>
+                        <GridBackground
+                            type={2}
+                            size="cover"
+                            repeat="no-repeat"
+                            zIndex={1}
+                            position="left"
+                        />
+
+                        <div>
+                            <h3>{item.title}</h3>
+                            <p>{item.description}</p>
+                        </div>
+                        <img
+                            src={item.img}
+                            alt="experience-img"
+                            className={item.imgClassName}
+                        />
+                    </article>
+                ))}
             </section>
         </main>
     );

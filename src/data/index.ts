@@ -19,6 +19,8 @@ import monmariage from "../assets/monmariage.png";
 import hostinger from "../assets/hostinger.svg";
 import wordpress from "../assets/wordpress.svg";
 import webrtc from "../assets/webrtc.svg";
+import code from "../assets/code.svg";
+import freelance from "../assets/freelance.svg";
 
 export const links = [
     { name: "Projects", href: "#projects" },
@@ -87,5 +89,27 @@ export const projects = [
         codebaseUrl: "https://github.com/ionathansideras/videoCall",
         liveUrl: "https://soloconvo.vercel.app/",
         techStack: [ts, react, firebase, webrtc],
+    },
+];
+
+export const aboutMe = [
+    "I prioritize client collaboration, fostering open communication",
+    "I'm very flexible with time zone communications",
+    "Tech enthusiast with a passion for development.",
+    "I constantly try to improve my tech stack",
+];
+
+export const experience = [
+    {
+        title: "FrontEnd Developer",
+        description: "2 years working in Three Deers",
+        img: code,
+        imgClassName: "experience-photo-1",
+    },
+    {
+        title: "Freelance",
+        description: "I worked on a freelance project for a client",
+        img: freelance,
+        imgClassName: "experience-photo-2",
     },
 ];

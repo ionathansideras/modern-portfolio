@@ -15,7 +15,7 @@ export default function Header() {
         function handleScroll() {
             // this function will be called on every time we scroll
             scrollTop = window.scrollY;
-            if (scrollTop > prevScroll + 400) {
+            if (scrollTop > prevScroll + 200) {
                 prevScroll = scrollTop;
                 if (headerRef.current) {
                     headerRef.current.classList.add("header-hidden");

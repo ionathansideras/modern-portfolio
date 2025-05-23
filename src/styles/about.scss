@@ -22,6 +22,22 @@
             margin-top: 20px;
             font-size: $lg_text_medium;
 
+            .white {
+                color: white;
+            }
+            .red {
+                color: rgb(255, 110, 110);
+            }
+            .green {
+                color: rgb(99, 250, 99);
+            }
+            .orange {
+                color: rgb(231, 144, 15);
+            }
+            .yellow {
+                color: rgb(255, 243, 81);
+            }
+
             span,
             p,
             div {

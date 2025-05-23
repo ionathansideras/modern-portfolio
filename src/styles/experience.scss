@@ -4,12 +4,21 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+    position: relative;
+
+    .balls {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 100%;
+    }
 
     .experience {
         position: relative;
         background-color: $secondary_background_color;
         border-radius: $border_radius;
-        height: 150px;
+        height: 170px;
         border: 1px solid $main_border_color;
         width: 50%;
         display: flex;
