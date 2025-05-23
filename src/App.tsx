@@ -9,10 +9,9 @@ function App() {
         <main>
             <Header />
             <Hero />
-            <About />
-
             <Projects />
             <Experience />
+            <About />
         </main>
     );
 }
