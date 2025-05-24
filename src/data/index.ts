@@ -95,22 +95,24 @@ export const projects = [
 ];
 
 export const aboutMe = [
-    "I prioritize client collaboration, fostering open communication",
-    "I'm very flexible with time zone communications",
+    "Even though i'm a Frontend Developer, I have experience in backend development as well.",
+    "I constantly try to improve my tech stack.",
     "Tech enthusiast with a passion for development.",
-    "I constantly try to improve my tech stack",
+    "I prioritize client collaboration, with open communication.",
 ];
 
 export const experience = [
     {
         title: "FrontEnd Developer",
-        description: "I've been working at Three Deers for 1.9 years.",
+        description:
+            "I've been working at Three Deers for 1.9 years, where I developed and maintained various projects.",
         img: code,
         imgClassName: "experience-photo-1",
     },
     {
         title: "Freelance",
-        description: "I worked on a freelance project for a client",
+        description:
+            "I worked on a freelance project for a wedding planner client, using Wordpress.",
         img: freelance,
         imgClassName: "experience-photo-2",
     },
