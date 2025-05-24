@@ -9,7 +9,10 @@
         text-decoration: none;
         color: $main_text_color;
         padding: 15px 40px;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        border: none;
+        font-size: $lg_text_small;
     }
     .app-button:after {
         content: "";

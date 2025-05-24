@@ -81,7 +81,7 @@ export default function About() {
                             >
                                 <img
                                     src={item}
-                                    className="skills-item-inner"
+                                    className={`skills-item-inner`}
                                     alt="skill-icon"
                                 />
                             </div>

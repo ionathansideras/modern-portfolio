@@ -6,6 +6,8 @@
 @import "./experience.scss";
 @import "./projects.scss";
 @import "./about.scss";
+@import "./contact.scss";
+@import "./footer.scss";
 
 html {
     scroll-behavior: smooth;
@@ -31,6 +33,11 @@ body {
     @media (max-width: $md) {
         padding: 0 20px;
     }
+
+    background-image: url("/grid2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
 }
 
 ::selection {

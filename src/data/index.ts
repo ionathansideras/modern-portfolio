@@ -21,6 +21,8 @@ import wordpress from "../assets/wordpress.svg";
 import webrtc from "../assets/webrtc.svg";
 import code from "../assets/code.svg";
 import freelance from "../assets/freelance.svg";
+import link from "../assets/link.svg";
+import git from "../assets/git.svg";
 
 export const links = [
     { name: "Projects", href: "#projects" },
@@ -115,3 +117,16 @@ export const experience = [
 ];
 
 export const techStack = [react, next, ts, js, mysql, tw, scss, three];
+
+export const socials = [
+    {
+        icon: git,
+        href: "https://github.com/ionathansideras",
+        alt: "GitHub",
+    },
+    {
+        icon: link,
+        href: "https://www.linkedin.com/in/ionathan-sideras-072a60255",
+        alt: "LinkedIn",
+    },
+];
