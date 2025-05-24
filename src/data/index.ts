@@ -43,7 +43,7 @@ export const projects = [
         title: "Fullstack Booking Web App",
         description:
             "A fullstack booking web app with Admin panel that i built with Next.js, mySQL, and MUI. It allows users to book their accommodations and manage their bookings.",
-        codebaseUrl: "https://github.com/ionathansideras/booking-site",
+        codebaseUrl: "https://github.com/ionathansideras/bookingsite/tree/main",
         liveUrl: "",
         techStack: [next, react, mysql, mui],
     },
@@ -104,7 +104,7 @@ export const aboutMe = [
 export const experience = [
     {
         title: "FrontEnd Developer",
-        description: "2 years working in Three Deers",
+        description: "I've been working at Three Deers for 1.9 years.",
         img: code,
         imgClassName: "experience-photo-1",
     },
