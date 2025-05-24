@@ -50,6 +50,10 @@ a {
     filter: blur(30px); // makes it glow softly
 }
 
+.center {
+    translate: -50% -50%;
+}
+
 .section-title {
     font-size: $lg_text_large;
     color: $main_text_color;

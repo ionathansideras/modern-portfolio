@@ -2,8 +2,28 @@ import SectionTitle from "./SectionTitle";
 import GridBackground from "./design/GridBackground";
 import CodeDiv from "./CodeDiv";
 import Gradient from "./design/Gradient";
+import worldimg from "../assets/world.png";
+import { techStack } from "../data";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/all";
+import rightLine from "../assets/right-line.svg";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
+    useGSAP(() => {
+        gsap.to(".skills-wheel", {
+            rotation: 160,
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".skills-wheel",
+                start: "top bottom", // when the top of .skills-wheel hits the bottom of the viewport
+                end: "bottom top", // when the bottom of .skills-wheel hits the top of the viewport
+                scrub: true, // ties the animation progress to the scrollbar
+            },
+        });
+    }, []);
     return (
         <main id="about">
             <SectionTitle>
@@ -29,10 +49,44 @@ export default function About() {
                     <CodeDiv />
                 </article>
                 <article className="about-skills">
-                    <p>
-                        {/* Here are some of the technologies that i have worked
-                        with in the past 3 years. */}
-                    </p>
+                    <img
+                        src={rightLine}
+                        alt="Left Line"
+                        className="left-line"
+                    />
+                    <img
+                        src={rightLine}
+                        alt="Right Line"
+                        className="right-line"
+                    />
+                    <div className="skills-wheel">
+                        <Gradient
+                            top={"50%"}
+                            left={"50%"}
+                            center={true}
+                            width="700px"
+                            opacity={0.1}
+                        />
+                        <img src={worldimg} alt="World" className="world-img" />
+                        <div className="outer-circle">
+                            <div className="inner-circle"></div>
+                        </div>
+                        {techStack.map((item, index) => (
+                            <div
+                                key={index}
+                                className="skills-item"
+                                style={{
+                                    transform: `rotate(${index * 45}deg) `,
+                                }}
+                            >
+                                <img
+                                    src={item}
+                                    className="skills-item-inner"
+                                    alt="skill-icon"
+                                />
+                            </div>
+                        ))}
+                    </div>
                 </article>
             </section>
         </main>

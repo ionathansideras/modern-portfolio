@@ -10,6 +10,7 @@ export default function Gradient({
     rotation,
     priority,
     opacity,
+    center,
 }: {
     animationClass?: string;
     top?: string;
@@ -20,10 +21,11 @@ export default function Gradient({
     rotation?: string;
     priority?: boolean;
     opacity?: number;
+    center?: boolean;
 }) {
     return (
         <img
-            className={`gradient ${animationClass}`}
+            className={`gradient ${animationClass} ${center ? "center" : ""}`}
             src={gradient}
             loading={priority ? "eager" : "lazy"}
             style={{

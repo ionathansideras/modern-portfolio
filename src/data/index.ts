@@ -113,3 +113,5 @@ export const experience = [
         imgClassName: "experience-photo-2",
     },
 ];
+
+export const techStack = [react, next, ts, js, mysql, tw, scss, three];

@@ -12,6 +12,7 @@
         transform: translateY(-50%);
         left: 0;
         width: 100%;
+        pointer-events: none;
 
         @media (max-width: $sm) {
             top: 10%;
