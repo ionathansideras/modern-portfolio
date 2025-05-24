@@ -4,6 +4,7 @@ import { heroContent } from "../data";
 import Button from "./Button";
 import Gradient from "./design/Gradient";
 import GridBackground from "./design/GridBackground";
+import { LuMousePointerClick } from "react-icons/lu";
 
 export default function Hero() {
     useGSAP(() => {
@@ -100,6 +101,11 @@ export default function Hero() {
             </div>
             <p className="hero-description">{heroContent.description}</p>
             <Button href="#projects" animationClass="hero-button">
+                <LuMousePointerClick
+                    style={{
+                        marginRight: "10px",
+                    }}
+                />
                 Check my Work
             </Button>
         </main>
