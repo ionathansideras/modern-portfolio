@@ -6,6 +6,7 @@ footer {
     align-items: center;
     margin-bottom: 50px;
     position: relative;
+    gap: 20px;
 
     p {
         color: $main_text_color;
@@ -15,7 +16,7 @@ footer {
 
     nav {
         display: flex;
-        gap: 20px;
+        gap: 10px;
 
         a {
             background-color: $secondary_background_color;
@@ -30,5 +31,9 @@ footer {
                 height: 20px;
             }
         }
+    }
+
+    @media (max-width: $xs) {
+        flex-direction: column;
     }
 }
