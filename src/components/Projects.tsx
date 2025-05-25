@@ -16,7 +16,7 @@ export default function Projects() {
             <ScrollParallax isAbsolutelyPositioned>
                 <Gradient top={"1300px"} left={"-100px"} width="400px" />
             </ScrollParallax>
-            <SectionTitle>
+            <SectionTitle animationClassName="projects-title">
                 A small selection of
                 <span> Recent Projects</span>
             </SectionTitle>

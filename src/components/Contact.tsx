@@ -26,7 +26,7 @@ export default function Contact() {
 
     return (
         <main id="contact">
-            <SectionTitle>
+            <SectionTitle animationClassName="contact-title">
                 Let's get in <span>touch</span>
             </SectionTitle>
 

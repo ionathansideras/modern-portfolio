@@ -20,7 +20,7 @@ export default function Button({
             ref={parallaxRef}
         >
             <MouseParallax
-                strength={0.07}
+                // strength={0.07}
                 parallaxContainerRef={parallaxRef}
                 shouldResetPosition
             >

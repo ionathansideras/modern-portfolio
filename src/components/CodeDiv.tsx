@@ -1,32 +1,26 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
-import { useRef } from "react";
 import { aboutMe } from "../data/index";
 import CodeTag from "./CodeTag";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function CodeDiv() {
-    const scrollRef = useRef(null);
-
-    useGSAP(
-        () => {
-            gsap.to(".stagger-code", {
-                opacity: 1,
-                stagger: 0.1,
-                duration: 0.2,
-                scrollTrigger: {
-                    trigger: scrollRef.current,
-                    start: "top 80%",
-                },
-            });
-        },
-        { scope: scrollRef }
-    );
+    useGSAP(() => {
+        gsap.to(".stagger-code", {
+            opacity: 1,
+            stagger: 0.1,
+            duration: 0.2,
+            scrollTrigger: {
+                trigger: ".about-text-code",
+                start: "top 80%",
+            },
+        });
+    }, []);
 
     return (
-        <div className="about-text-code" ref={scrollRef}>
+        <div className="about-text-code">
             <CodeTag>{"<"}</CodeTag>
             <CodeTag color="red">ul </CodeTag>
             <CodeTag color="yellow">className</CodeTag>

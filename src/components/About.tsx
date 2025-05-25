@@ -26,7 +26,7 @@ export default function About() {
     }, []);
     return (
         <main id="about">
-            <SectionTitle>
+            <SectionTitle animationClassName="about-title">
                 A little bit <span>about me</span>
             </SectionTitle>
             <section className="about-container">
