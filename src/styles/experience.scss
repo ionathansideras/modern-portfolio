@@ -68,12 +68,6 @@
             right: 0;
             height: 80%;
         }
-
-        &:hover {
-            div {
-                transform: translateX(10px);
-            }
-        }
     }
     @media (max-width: $md) {
         .experience {
