@@ -11,6 +11,7 @@ export default function Gradient({
     priority,
     opacity,
     center,
+    onLoadGradient,
 }: {
     animationClass?: string;
     top?: string;
@@ -22,6 +23,7 @@ export default function Gradient({
     priority?: boolean;
     opacity?: number;
     center?: boolean;
+    onLoadGradient?: () => void;
 }) {
     return (
         <img
@@ -29,6 +31,7 @@ export default function Gradient({
             src={gradient}
             loading={priority ? "eager" : "lazy"}
             fetchPriority={priority ? "high" : "auto"}
+            onLoad={onLoadGradient}
             style={{
                 top: top,
                 right: right,

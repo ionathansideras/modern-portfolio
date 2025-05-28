@@ -5,8 +5,15 @@ import Button from "./Button";
 import Gradient from "./design/Gradient";
 import GridBackground from "./design/GridBackground";
 import { LuMousePointerClick } from "react-icons/lu";
+import { useState } from "react";
 
 export default function Hero() {
+    const [gradientLoaded, setGradientLoaded] = useState(0);
+
+    const onLoadGradient = () => {
+        setGradientLoaded((prev) => prev + 1);
+    };
+
     useGSAP(() => {
         gsap.to(".stagger-box-hero", {
             opacity: 1,
@@ -25,40 +32,40 @@ export default function Hero() {
             { y: 40, opacity: 0 },
             { y: 0, opacity: 1, duration: 1 }
         );
-
-        gsap.fromTo(
-            ".gradient-hero1",
-            {
-                opacity: 0,
-            },
-            {
-                opacity: 0.3,
-                duration: 1,
-                ease: "power2.out",
-            }
-        );
-
-        gsap.fromTo(
-            ".gradient-hero2",
-            {
-                opacity: 0,
-            },
-            {
-                opacity: 0.3,
-                duration: 1,
-                delay: 0.5,
-                ease: "power2.out",
-            }
-        );
-
-        gsap.to(".gradient-hero2", {
-            top: -190,
-            duration: 6,
-            repeat: -1,
-            yoyo: true,
-            ease: "power1.inOut",
-        });
     }, []);
+
+    useGSAP(() => {
+        if (gradientLoaded === 2) {
+            gsap.to(
+                ".gradient-hero1",
+
+                {
+                    opacity: 0.3,
+                    duration: 1,
+                    ease: "power2.out",
+                }
+            );
+
+            gsap.to(
+                ".gradient-hero2",
+
+                {
+                    opacity: 0.3,
+                    duration: 1,
+                    delay: 0.5,
+                    ease: "power2.out",
+                }
+            );
+
+            gsap.to(".gradient-hero2", {
+                top: -190,
+                duration: 6,
+                repeat: -1,
+                yoyo: true,
+                ease: "power1.inOut",
+            });
+        }
+    }, [gradientLoaded]);
 
     // Split the string into an array using newline as delimiter.
     const mainArray = heroContent.main.split(" ");
@@ -80,6 +87,8 @@ export default function Hero() {
                     left={"-50px"}
                     width="300px"
                     priority={true}
+                    onLoadGradient={onLoadGradient}
+                    opacity={0}
                 />
                 {mainArray.map((item, index) => (
                     <h1
@@ -98,6 +107,8 @@ export default function Hero() {
                     width="500px"
                     rotation="-90deg"
                     priority={true}
+                    onLoadGradient={onLoadGradient}
+                    opacity={0}
                 />
             </div>
             <p className="hero-description">{heroContent.description}</p>
