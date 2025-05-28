@@ -14,6 +14,7 @@ export default function Hero() {
         setGradientLoaded((prev) => prev + 1);
     };
 
+    console.log("gradientLoaded", gradientLoaded);
     useGSAP(() => {
         gsap.to(".stagger-box-hero", {
             opacity: 1,
