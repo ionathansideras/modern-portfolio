@@ -1,4 +1,4 @@
-import BookingWebSite from "../assets/BookingWebSite.webp";
+import BookingWebSite from "../assets/bookingWebSite.webp";
 import mui from "../assets/mui.svg";
 import react from "../assets/re.svg";
 import ts from "../assets/ts.svg";
