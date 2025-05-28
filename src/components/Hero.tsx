@@ -35,37 +35,37 @@ export default function Hero() {
     }, []);
 
     useGSAP(() => {
-        if (gradientLoaded === 2) {
-            gsap.to(
-                ".gradient-hero1",
+        // if (gradientLoaded === 2) {
+        gsap.to(
+            ".gradient-hero1",
 
-                {
-                    opacity: 0.3,
-                    duration: 1,
-                    ease: "power2.out",
-                }
-            );
+            {
+                opacity: 0.3,
+                duration: 1,
+                ease: "power2.out",
+            }
+        );
 
-            gsap.to(
-                ".gradient-hero2",
+        gsap.to(
+            ".gradient-hero2",
 
-                {
-                    opacity: 0.3,
-                    duration: 1,
-                    delay: 0.5,
-                    ease: "power2.out",
-                }
-            );
+            {
+                opacity: 0.3,
+                duration: 1,
+                delay: 0.5,
+                ease: "power2.out",
+            }
+        );
 
-            gsap.to(".gradient-hero2", {
-                top: -190,
-                duration: 6,
-                repeat: -1,
-                yoyo: true,
-                ease: "power1.inOut",
-            });
-        }
-    }, [gradientLoaded]);
+        gsap.to(".gradient-hero2", {
+            top: -190,
+            duration: 6,
+            repeat: -1,
+            yoyo: true,
+            ease: "power1.inOut",
+        });
+        // }
+    }, []);
 
     // Split the string into an array using newline as delimiter.
     const mainArray = heroContent.main.split(" ");
