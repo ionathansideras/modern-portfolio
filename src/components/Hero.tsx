@@ -33,7 +33,7 @@ export default function Hero() {
             },
             {
                 opacity: 0.3,
-                duration: 0.5,
+                duration: 1,
                 ease: "power2.out",
             }
         );
