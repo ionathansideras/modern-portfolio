@@ -34,6 +34,7 @@ export default function Hero() {
             {
                 opacity: 0.3,
                 duration: 1,
+                delay: 0.5,
                 ease: "power2.out",
             }
         );
@@ -46,7 +47,7 @@ export default function Hero() {
             {
                 opacity: 0.3,
                 duration: 1,
-                delay: 0.5,
+                delay: 0.7,
                 ease: "power2.out",
             }
         );
