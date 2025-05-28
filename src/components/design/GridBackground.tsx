@@ -24,14 +24,14 @@ export default function GridBackground({
         return (
             <span
                 style={styles}
-                className={`grid-background-1 ${animationClass}`}
+                className={`grid-background-1 ${animationClass || ""}`}
             ></span>
         );
     }
     return (
         <span
             style={styles}
-            className={`grid-background-2 ${animationClass}`}
+            className={`grid-background-2 ${animationClass || ""}`}
         ></span>
     );
 }
