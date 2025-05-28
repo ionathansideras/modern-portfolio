@@ -97,6 +97,7 @@ export default function Hero() {
                     top="0px"
                     width="500px"
                     rotation="-90deg"
+                    priority={true}
                 />
             </div>
             <p className="hero-description">{heroContent.description}</p>

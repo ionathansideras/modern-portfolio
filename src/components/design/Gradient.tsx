@@ -28,6 +28,7 @@ export default function Gradient({
             className={`gradient ${animationClass} ${center ? "center" : ""}`}
             src={gradient}
             loading={priority ? "eager" : "lazy"}
+            fetchPriority={priority ? "high" : "auto"}
             style={{
                 top: top,
                 right: right,
