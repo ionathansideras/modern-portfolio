@@ -2,7 +2,7 @@ import SectionTitle from "./SectionTitle";
 import GridBackground from "./design/GridBackground";
 import CodeDiv from "./CodeDiv";
 import Gradient from "./design/Gradient";
-import worldimg from "../assets/world.png";
+import worldimg from "../assets/world.webp";
 import { techStack } from "../data";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
