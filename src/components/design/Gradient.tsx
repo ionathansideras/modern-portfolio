@@ -1,4 +1,4 @@
-import gradient from "../../assets/gradient.png";
+import gradient from "../../assets/gradient.webp";
 
 export default function Gradient({
     animationClass,
