@@ -30,9 +30,9 @@ export default function ProjectItem({
             },
             {
                 scale: 1,
-                duration: 0.5,
+                duration: 0.3,
                 stagger: 0.2,
-                ease: "back.inOut",
+                ease: "expo.inOut",
                 scrollTrigger: {
                     trigger: ".icons-tech-stack-" + projectIndex,
                     start: "top bottom", // when the top of .project hits the bottom of the viewport
