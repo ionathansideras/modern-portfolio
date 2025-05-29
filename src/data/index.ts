@@ -24,6 +24,8 @@ import freelance from "../assets/freelance.svg";
 import link from "../assets/link.svg";
 import git from "../assets/git.svg";
 import redux from "../assets/redux.svg";
+import html from "../assets/html.svg";
+import css from "../assets/css.svg";
 
 export const links = [
     { name: "Projects", href: "#projects" },
@@ -149,14 +151,16 @@ export const experience = [
 ];
 
 export const techStack = [
+    { icon: scss, name: "SCSS" },
+    { icon: html, name: "HTML" },
+    { icon: css, name: "CSS" },
+    { icon: tw, name: "Tailwind CSS" },
+    { icon: three, name: "Three.js" },
+    { icon: redux, name: "Redux" },
     { icon: react, name: "React" },
     { icon: next, name: "Next.js" },
     { icon: ts, name: "Typescript" },
     { icon: js, name: "JavaScript" },
-    { icon: redux, name: "Redux" },
-    { icon: tw, name: "Tailwind CSS" },
-    { icon: scss, name: "SCSS" },
-    { icon: three, name: "Three.js" },
 ];
 
 export const socials = [

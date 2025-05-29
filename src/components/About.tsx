@@ -76,7 +76,9 @@ export default function About() {
                                 key={index}
                                 className="skills-item"
                                 style={{
-                                    transform: `rotate(${index * 45}deg) `,
+                                    transform: `rotate(${
+                                        index * 36
+                                    }deg) translateY(-40%)`,
                                 }}
                             >
                                 <img
