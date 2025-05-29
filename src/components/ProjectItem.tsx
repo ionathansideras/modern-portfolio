@@ -13,12 +13,16 @@ export default function ProjectItem({
     description?: string;
     codebaseUrl?: string;
     liveUrl?: string;
-    techStack?: string[];
+    techStack?: { icon: string; name: string }[];
 }) {
     return (
         <article className="project">
             <div className="project-image-box">
-                <img className="project-image" src={img} alt="project-image" />
+                <img
+                    className="project-image"
+                    src={img}
+                    alt={title + " image"}
+                />
             </div>
             <div className="project-description">
                 <h3>{title}</h3>
@@ -30,8 +34,9 @@ export default function ProjectItem({
                         <img
                             key={index}
                             className={`project-tech-icon`}
-                            src={img}
-                            alt={`tech-stack-icon`}
+                            src={img.icon}
+                            alt={`${img.name} icon`}
+                            title={img.name}
                             style={{
                                 left: `${index * 33}px`,
                             }}

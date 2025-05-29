@@ -80,9 +80,10 @@ export default function About() {
                                 }}
                             >
                                 <img
-                                    src={item}
+                                    src={item.icon}
                                     className={`skills-item-inner`}
-                                    alt="skill-icon"
+                                    alt={`${item.name} icon`}
+                                    title={item.name}
                                 />
                             </div>
                         ))}

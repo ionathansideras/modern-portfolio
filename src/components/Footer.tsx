@@ -11,10 +11,14 @@ export default function Footer() {
                         href={social.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        aria-label={social.alt}
+                        aria-label={social.name}
                         key={index}
                     >
-                        <img src={social.icon} alt={social.alt} />
+                        <img
+                            src={social.icon}
+                            alt={social.name + " icon"}
+                            title={social.name}
+                        />
                     </a>
                 ))}
             </nav>

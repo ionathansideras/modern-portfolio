@@ -23,6 +23,7 @@ import code from "../assets/code.svg";
 import freelance from "../assets/freelance.svg";
 import link from "../assets/link.svg";
 import git from "../assets/git.svg";
+import redux from "../assets/redux.svg";
 
 export const links = [
     { name: "Projects", href: "#projects" },
@@ -46,7 +47,12 @@ export const projects = [
             "A full-stack booking web app with an admin panel, built using Next.js, MySQL, and MUI. It allows users to book accommodations and manage their bookings.",
         codebaseUrl: "https://github.com/ionathansideras/bookingsite/tree/main",
         liveUrl: "",
-        techStack: [next, react, mysql, mui],
+        techStack: [
+            { icon: next, name: "Next.js" },
+            { icon: react, name: "React" },
+            { icon: mysql, name: "MySQL" },
+            { icon: mui, name: "MUI" },
+        ],
     },
     {
         img: brainwave,
@@ -55,7 +61,12 @@ export const projects = [
             "A landing page with a modern design and responsive layout. It showcases the features and benefits of the product, with a focus on user experience.",
         codebaseUrl: "https://github.com/ionathansideras/mindflow",
         liveUrl: "https://mindflow-ecru.vercel.app/",
-        techStack: [vite, react, tw, js],
+        techStack: [
+            { icon: vite, name: "Vite" },
+            { icon: react, name: "React" },
+            { icon: tw, name: "Tailwind CSS" },
+            { icon: js, name: "JavaScript" },
+        ],
     },
     {
         img: iphone,
@@ -64,7 +75,12 @@ export const projects = [
             "A clone of the iPhone 15 Pro website, showcasing the features and specifications of the device. It also includes smooth animations and 3D interactive elements.",
         codebaseUrl: "https://github.com/ionathansideras/3d-iphone-website",
         liveUrl: "https://3d-iphone15pro.vercel.app/",
-        techStack: [react, tw, gsap, three],
+        techStack: [
+            { icon: react, name: "React" },
+            { icon: tw, name: "Tailwind CSS" },
+            { icon: gsap, name: "GSAP" },
+            { icon: three, name: "Three.js" },
+        ],
     },
     {
         img: monmariage,
@@ -73,7 +89,10 @@ export const projects = [
             "A freelance website for a wedding - event planner. It showcases the services and portfolio of the planner, with a focus on user experience and design.",
         codebaseUrl: "",
         liveUrl: "https://monmariageanni.com/",
-        techStack: [wordpress, hostinger],
+        techStack: [
+            { icon: wordpress, name: "Wordpress" },
+            { icon: hostinger, name: "Hostinger" },
+        ],
     },
     {
         img: car,
@@ -82,7 +101,12 @@ export const projects = [
             "A 3D car configurator that allows users to customize the Porsche with different colors and features. It uses R3F for the 3D rendering and React for the frontend.",
         codebaseUrl: "https://github.com/ionathansideras/3d-configurator",
         liveUrl: "https://porscheconfigurator.vercel.app/",
-        techStack: [vite, react, three, scss],
+        techStack: [
+            { icon: vite, name: "Vite" },
+            { icon: react, name: "React" },
+            { icon: three, name: "Three.js" },
+            { icon: scss, name: "SCSS" },
+        ],
     },
     {
         img: videocall,
@@ -91,7 +115,12 @@ export const projects = [
             "A video call app that allows users to make video calls with their friends and family in a P2P style. It uses WebRTC for the video streaming and Firebase for the backend.",
         codebaseUrl: "https://github.com/ionathansideras/videoCall",
         liveUrl: "https://soloconvo.vercel.app/",
-        techStack: [ts, react, firebase, webrtc],
+        techStack: [
+            { icon: ts, name: "Typescript" },
+            { icon: react, name: "React" },
+            { icon: firebase, name: "Firebase" },
+            { icon: webrtc, name: "WebRTC" },
+        ],
     },
 ];
 
@@ -119,17 +148,26 @@ export const experience = [
     },
 ];
 
-export const techStack = [react, next, ts, js, mysql, tw, scss, three];
+export const techStack = [
+    { icon: react, name: "React" },
+    { icon: next, name: "Next.js" },
+    { icon: ts, name: "Typescript" },
+    { icon: js, name: "JavaScript" },
+    { icon: redux, name: "Redux" },
+    { icon: tw, name: "Tailwind CSS" },
+    { icon: scss, name: "SCSS" },
+    { icon: three, name: "Three.js" },
+];
 
 export const socials = [
     {
         icon: git,
         href: "https://github.com/ionathansideras",
-        alt: "GitHub",
+        name: "GitHub",
     },
     {
         icon: link,
         href: "https://www.linkedin.com/in/ionathan-sideras-072a60255",
-        alt: "LinkedIn",
+        name: "LinkedIn",
     },
 ];
