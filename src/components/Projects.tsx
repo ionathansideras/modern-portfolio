@@ -23,6 +23,7 @@ export default function Projects() {
             <section className="projects-container">
                 {projects.map((project, index) => (
                     <ProjectItem
+                        projectIndex={index}
                         key={index}
                         img={project.img}
                         title={project.title}
