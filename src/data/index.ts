@@ -38,7 +38,7 @@ export const heroContent = {
     title: "Welcome to My Portfolio",
     main: "Always creating Beautiful & Functional Web Experiences",
     description:
-        "Im Ionathan the FrontEnd Developer & this is my corner of the web!",
+        "Im Ionathan the Frontend Developer & this is my corner of the web!",
 };
 
 export const projects = [
@@ -135,7 +135,7 @@ export const aboutMe = [
 
 export const experience = [
     {
-        title: "FrontEnd Developer",
+        title: "Frontend Developer",
         description:
             "I've been working at Three Deers for 1.9 years, where I develop and maintain various projects.",
         img: code,
