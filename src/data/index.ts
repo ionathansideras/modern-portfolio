@@ -129,8 +129,8 @@ export const projects = [
 export const aboutMe = [
     "Even though i'm a Frontend Developer, I have experience in Backend Development as well.",
     "I constantly try to improve my tech stack.",
-    "Tech enthusiast with a passion for development.",
-    "I prioritize client collaboration, with open communication.",
+    "Open communication and collaboration is my priority.",
+    "Always open to new opportunities and challenges.",
 ];
 
 export const experience = [
