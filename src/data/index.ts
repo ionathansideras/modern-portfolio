@@ -38,7 +38,7 @@ export const heroContent = {
     title: "Welcome to My Portfolio",
     main: "Always creating Beautiful & Functional Web Experiences",
     description:
-        "Im Jonathan the FrontEnd Developer & this is my corner of the web!",
+        "Im Ionathan the FrontEnd Developer & this is my corner of the web!",
 };
 
 export const projects = [
@@ -58,7 +58,7 @@ export const projects = [
     },
     {
         img: brainwave,
-        title: "Frontend landing page",
+        title: "SaaS landing page",
         description:
             "A landing page with a modern design and responsive layout. It showcases the features and benefits of the product, with a focus on user experience.",
         codebaseUrl: "https://github.com/ionathansideras/mindflow",
@@ -137,7 +137,7 @@ export const experience = [
     {
         title: "FrontEnd Developer",
         description:
-            "I've been working at Three Deers for 1.9 years, where I developed and maintained various projects.",
+            "I've been working at Three Deers for 1.9 years, where I develop and maintain various projects.",
         img: code,
         imgClassName: "experience-photo-1",
     },
