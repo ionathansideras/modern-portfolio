@@ -48,7 +48,7 @@ export const projects = [
         description:
             "A full-stack booking web app with an admin panel, built using Next.js, MySQL, and MUI. It allows users to book accommodations and manage their bookings.",
         codebaseUrl: "https://github.com/ionathansideras/bookingsite/tree/main",
-        liveUrl: "",
+        liveUrl: "https://ionathans-demo-site.com/",
         techStack: [
             { icon: next, name: "Next.js" },
             { icon: react, name: "React" },
