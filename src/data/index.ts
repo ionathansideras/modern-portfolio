@@ -26,6 +26,7 @@ import git from "../assets/git.svg";
 import redux from "../assets/redux.svg";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
+import gamingsite from "../assets/gamingsite.webp";
 
 export const links = [
     { name: "Projects", href: "#projects" },
@@ -57,6 +58,20 @@ export const projects = [
         ],
     },
     {
+        img: gamingsite,
+        title: "Gaming Lading page",
+        description:
+            "A fully modern, highly animated, and interactive landing page experience. Click the music button in the top right, scroll, and immerse yourself in the magic of gaming.",
+        codebaseUrl: "https://github.com/ionathansideras/game-landing-page",
+        liveUrl: "https://game-landing-page-woad.vercel.app/",
+        techStack: [
+            { icon: vite, name: "Vite" },
+            { icon: react, name: "React" },
+            { icon: ts, name: "Typescript" },
+            { icon: tw, name: "Tailwind CSS" },
+        ],
+    },
+    {
         img: brainwave,
         title: "SaaS landing page",
         description:
@@ -66,8 +81,8 @@ export const projects = [
         techStack: [
             { icon: vite, name: "Vite" },
             { icon: react, name: "React" },
-            { icon: tw, name: "Tailwind CSS" },
             { icon: js, name: "JavaScript" },
+            { icon: tw, name: "Tailwind CSS" },
         ],
     },
     {
