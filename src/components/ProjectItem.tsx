@@ -42,7 +42,9 @@ export default function ProjectItem({
         );
     }, []);
     return (
-        <article className="project">
+        <article
+            className={`project${projectIndex === 1 ? " cyber-alley" : ""}`}
+        >
             <div className="project-image-box">
                 <img
                     className="project-image"

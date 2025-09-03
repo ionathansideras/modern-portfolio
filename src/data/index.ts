@@ -27,6 +27,8 @@ import redux from "../assets/redux.svg";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
 import gamingsite from "../assets/gamingsite.webp";
+import supabase from "../assets/supabase-icon.svg";
+import cyberAlley from "../assets/cyber-alley.png";
 
 export const links = [
     { name: "Projects", href: "#projects" },
@@ -49,12 +51,26 @@ export const projects = [
         description:
             "A full-stack booking web app with an admin panel, built using Next.js, MySQL, and MUI. It allows users to book accommodations and manage their bookings.",
         codebaseUrl: "https://github.com/ionathansideras/bookingsite/tree/main",
-        liveUrl: "https://ionathans-demo-site.com/",
+        // liveUrl: "https://ionathans-demo-site.com/",
         techStack: [
             { icon: next, name: "Next.js" },
             { icon: react, name: "React" },
             { icon: mysql, name: "MySQL" },
             { icon: mui, name: "MUI" },
+        ],
+    },
+    {
+        img: cyberAlley,
+        title: "Fullstack Event Web App",
+        description:
+            "Cyber Alley is a community-driven platform for developers to discover, host, and join tech events. Connect, learn, and build the future together—organize meetups, join workshops, and collaborate with innovators worldwide.",
+        codebaseUrl: "https://github.com/ionathansideras/cyber-alley",
+        liveUrl: "https://cyber-alley-ten.vercel.app/",
+        techStack: [
+            { icon: next, name: "Next.js" },
+            { icon: supabase, name: "Supabase" },
+            { icon: ts, name: "Typescript" },
+            { icon: react, name: "React" },
         ],
     },
     {

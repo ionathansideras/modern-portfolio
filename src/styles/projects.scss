@@ -116,3 +116,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+.cyber-alley {
+    border: 1px solid #dbff2957 !important;
+    box-shadow: 0px 0px 20px #dbff2959;
+
+    .project-urls a {
+        color: #dbff29ff !important;
+    }
+}
