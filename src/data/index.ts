@@ -168,7 +168,7 @@ export const experience = [
     {
         title: "Frontend Developer",
         description:
-            "I've been working at Three Deers for 1.11 years, where I develop and maintain various projects.",
+            "I worked at Three Deers for 2 years, where I developed and maintained various projects.",
         img: code,
         imgClassName: "experience-photo-1",
     },
