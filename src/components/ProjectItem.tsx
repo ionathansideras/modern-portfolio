@@ -74,7 +74,7 @@ export default function ProjectItem({
                 <div className="project-urls">
                     {codebaseUrl && (
                         <a href={codebaseUrl} target="_blank">
-                            Code <FaLocationArrow />
+                            Repo <FaLocationArrow />
                         </a>
                     )}
                     {liveUrl && (
