@@ -27,8 +27,8 @@ import redux from "../assets/redux.svg";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
 import gamingsite from "../assets/gamingsite.webp";
-import supabase from "../assets/supabase-icon.svg";
-import cyberAlley from "../assets/cyber-alley.png";
+// import supabase from "../assets/supabase-icon.svg";
+// import cyberAlley from "../assets/cyber-alley.png";
 
 export const links = [
     { name: "Projects", href: "#projects" },
