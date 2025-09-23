@@ -59,20 +59,20 @@ export const projects = [
             { icon: mui, name: "MUI" },
         ],
     },
-    {
-        img: cyberAlley,
-        title: "Fullstack Event Web App",
-        description:
-            "Cyber Alley is a community-driven platform for developers to discover, host, and join tech events. Connect, learn, and build the future together—organize meetups, join workshops, and collaborate with innovators worldwide.",
-        codebaseUrl: "https://github.com/ionathansideras/cyber-alley",
-        liveUrl: "https://cyber-alley-ten.vercel.app/",
-        techStack: [
-            { icon: next, name: "Next.js" },
-            { icon: supabase, name: "Supabase" },
-            { icon: ts, name: "Typescript" },
-            { icon: react, name: "React" },
-        ],
-    },
+    // {
+    //     img: cyberAlley,
+    //     title: "Fullstack Event Web App",
+    //     description:
+    //         "Cyber Alley is a community-driven platform for developers to discover, host, and join tech events. Connect, learn, and build the future together—organize meetups, join workshops, and collaborate with innovators worldwide.",
+    //     codebaseUrl: "https://github.com/ionathansideras/cyber-alley",
+    //     liveUrl: "https://cyber-alley-ten.vercel.app/",
+    //     techStack: [
+    //         { icon: next, name: "Next.js" },
+    //         { icon: supabase, name: "Supabase" },
+    //         { icon: ts, name: "Typescript" },
+    //         { icon: react, name: "React" },
+    //     ],
+    // },
     {
         img: gamingsite,
         title: "Gaming Lading page",
