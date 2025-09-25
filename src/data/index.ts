@@ -20,7 +20,6 @@ import hostinger from "../assets/hostinger.svg";
 import wordpress from "../assets/wordpress.svg";
 import webrtc from "../assets/webrtc.svg";
 import code from "../assets/code.svg";
-import freelance from "../assets/freelance.svg";
 import link from "../assets/link.svg";
 import git from "../assets/git.svg";
 import redux from "../assets/redux.svg";
@@ -29,6 +28,8 @@ import css from "../assets/css.svg";
 import gamingsite from "../assets/gamingsite.webp";
 // import supabase from "../assets/supabase-icon.svg";
 // import cyberAlley from "../assets/cyber-alley.png";
+import vinted from "../assets/vinted.webp";
+import threeDeers from "../assets/threedeers.webp";
 
 export const links = [
     { name: "Projects", href: "#projects" },
@@ -166,18 +167,25 @@ export const aboutMe = [
 
 export const experience = [
     {
+        title: "Web Engineer",
+        description:
+            "In a few weeks i will start working at Vinted as a Web Engineer.",
+        img: vinted,
+        imgClassName: "experience-photo-1",
+    },
+    {
         title: "Frontend Developer",
         description:
             "I worked at Three Deers for 2 years, where I developed and maintained various projects.",
-        img: code,
-        imgClassName: "experience-photo-1",
+        img: threeDeers,
+        imgClassName: "experience-photo-2",
     },
     {
         title: "Freelance",
         description:
             "I worked on a freelance project for a wedding planner client, using Wordpress.",
-        img: freelance,
-        imgClassName: "experience-photo-2",
+        img: code,
+        imgClassName: "experience-photo-3",
     },
 ];
 
