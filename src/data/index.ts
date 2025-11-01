@@ -168,8 +168,7 @@ export const aboutMe = [
 export const experience = [
     {
         title: "Web Engineer",
-        description:
-            "In a few weeks i will start working at Vinted as a Web Engineer.",
+        description: "I'm currently working at Vinted as a Web Engineer.",
         img: vinted,
         imgClassName: "experience-photo-1",
     },
