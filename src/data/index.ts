@@ -80,7 +80,7 @@ export const projects = [
         description:
             "A fully modern, highly animated, and interactive landing page experience. Click the music button in the top right, scroll, and immerse yourself in the magic of gaming.",
         codebaseUrl: "https://github.com/ionathansideras/game-landing-page",
-        liveUrl: "https://game-landing-page-woad.vercel.app/",
+        liveUrl: "https://gaming.ionathansideras.com/",
         techStack: [
             { icon: vite, name: "Vite" },
             { icon: react, name: "React" },
@@ -94,7 +94,7 @@ export const projects = [
         description:
             "A landing page with a modern design and responsive layout. It showcases the features and benefits of the product, with a focus on user experience.",
         codebaseUrl: "https://github.com/ionathansideras/mindflow",
-        liveUrl: "https://mindflow-ecru.vercel.app/",
+        liveUrl: "https://mindflow.ionathansideras.com",
         techStack: [
             { icon: vite, name: "Vite" },
             { icon: react, name: "React" },
@@ -108,7 +108,7 @@ export const projects = [
         description:
             "A clone of the iPhone 15 Pro website, showcasing the features and specifications of the device. It also includes smooth animations and 3D interactive elements.",
         codebaseUrl: "https://github.com/ionathansideras/3d-iphone-website",
-        liveUrl: "https://3d-iphone15pro.vercel.app/",
+        liveUrl: "https://iphone.ionathansideras.com",
         techStack: [
             { icon: react, name: "React" },
             { icon: tw, name: "Tailwind CSS" },
@@ -134,7 +134,7 @@ export const projects = [
         description:
             "A 3D car configurator that allows users to customize the Porsche with different colors and features. It uses R3F for the 3D rendering and React for the frontend.",
         codebaseUrl: "https://github.com/ionathansideras/3d-configurator",
-        liveUrl: "https://porscheconfigurator.vercel.app/",
+        liveUrl: "https://porsche.ionathansideras.com",
         techStack: [
             { icon: vite, name: "Vite" },
             { icon: react, name: "React" },
@@ -148,7 +148,7 @@ export const projects = [
         description:
             "A video call app that allows users to make video calls with their friends and family in a P2P style. It uses WebRTC for the video streaming and Firebase for the backend.",
         codebaseUrl: "https://github.com/ionathansideras/videoCall",
-        liveUrl: "https://soloconvo.vercel.app/",
+        liveUrl: "https://videoChat.ionathansideras.com",
         techStack: [
             { icon: ts, name: "Typescript" },
             { icon: react, name: "React" },
