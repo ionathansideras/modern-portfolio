@@ -80,7 +80,7 @@ export const projects = [
         description:
             "A fully modern, highly animated, and interactive landing page experience. Click the music button in the top right, scroll, and immerse yourself in the magic of gaming.",
         codebaseUrl: "https://github.com/ionathansideras/game-landing-page",
-        liveUrl: "https://gaming.ionathansideras.com/",
+        liveUrl: "https://zentry.ionathansideras.com/",
         techStack: [
             { icon: vite, name: "Vite" },
             { icon: react, name: "React" },
