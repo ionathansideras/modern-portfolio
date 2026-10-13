@@ -50,9 +50,9 @@ export const projects = [
         img: BookingWebSite,
         title: "Fullstack Booking Web App",
         description:
-            "A full-stack booking web app with an admin panel, built using Next.js, MySQL, and MUI. It allows users to book accommodations and manage their bookings.",
+            "A full-stack booking web app with an admin panel, built using Next.js, MySQL, rate limiter, email system and MUI. It allows users to book accommodations and manage their bookings.",
         codebaseUrl: "https://github.com/ionathansideras/bookingsite/tree/main",
-        // liveUrl: "https://ionathans-demo-site.com/",
+        liveUrl: "https://airpnp.ionathansideras.com/",
         techStack: [
             { icon: next, name: "Next.js" },
             { icon: react, name: "React" },
